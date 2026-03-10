@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Engine - Document Intelligence Platform</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #0f172a 0%, #1a1a2e 100%); color: #e2e8f0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { max-width: 800px; padding: 48px; text-align: center; }
+    .icon { font-size: 64px; margin-bottom: 24px; }
+    h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 16px; background: linear-gradient(135deg, #06b6d4, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { font-size: 1.15rem; color: #94a3b8; margin-bottom: 40px; line-height: 1.6; }
+    .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 40px; text-align: left; }
+    .feature { background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(148, 163, 184, 0.1); border-radius: 12px; padding: 20px; }
+    .feature h3 { font-size: 0.95rem; color: #10b981; margin-bottom: 8px; }
+    .feature p { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; }
+    .arch { display: flex; justify-content: center; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
+    .arch-item { padding: 12px 20px; background: rgba(30, 41, 59, 0.8); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 8px; text-align: center; }
+    .arch-item .label { font-size: 0.7rem; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
+    .arch-item .value { font-size: 0.9rem; color: #10b981; font-weight: 600; margin-top: 4px; }
+    .tech { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 32px; }
+    .tech span { padding: 4px 12px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: 20px; font-size: 0.8rem; color: #10b981; }
+    .footer { margin-top: 32px; font-size: 0.85rem; color: #64748b; }
+    .footer a { color: #10b981; text-decoration: none; }
+    .btn { display: inline-block; margin-top: 24px; padding: 12px 32px; background: linear-gradient(135deg, #06b6d4, #10b981); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.9; }
+    @media (max-width: 640px) { .features { grid-template-columns: 1fr; } h1 { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📄</div>
+    <h1>RAG Engine</h1>
+    <p class="subtitle">Full-stack Document Intelligence platform with Retrieval-Augmented Generation. Upload documents, ask questions, and get AI-powered answers with source citations.</p>
+    <div class="arch">
+      <div class="arch-item"><div class="label">Frontend</div><div class="value">Next.js</div></div>
+      <div class="arch-item"><div class="label">Backend</div><div class="value">FastAPI</div></div>
+      <div class="arch-item"><div class="label">Vector Store</div><div class="value">ChromaDB</div></div>
+      <div class="arch-item"><div class="label">AI Model</div><div class="value">OpenAI</div></div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>Document Processing</h3>
+        <p>Upload PDFs, DOCX, and text files with automatic chunking and embedding generation</p>
+      </div>
+      <div class="feature">
+        <h3>Semantic Search</h3>
+        <p>Vector similarity search using ChromaDB for finding relevant document passages</p>
+      </div>
+      <div class="feature">
+        <h3>AI-Powered Q&A</h3>
+        <p>Ask natural language questions and get answers with source document citations</p>
+      </div>
+      <div class="feature">
+        <h3>Real-Time Streaming</h3>
+        <p>Token-by-token response streaming for instant, interactive conversations</p>
+      </div>
+    </div>
+    <div class="tech">
+      <span>Next.js</span>
+      <span>FastAPI</span>
+      <span>Python</span>
+      <span>TypeScript</span>
+      <span>ChromaDB</span>
+      <span>OpenAI</span>
+      <span>LangChain</span>
+      <span>Tailwind CSS</span>
+    </div>
+    <a href="https://github.com/alrod-dev/rag-engine" class="btn" target="_blank">View on GitHub</a>
+    <div class="footer">
+      Built by <a href="https://github.com/alrod-dev" target="_blank">Alfredo Wiesner</a>
+    </div>
+  </div>
+</body>
+</html>
